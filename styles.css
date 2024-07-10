@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0e4d7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff6666;
+    cursor: pointer;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+

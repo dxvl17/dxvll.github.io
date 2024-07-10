@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz un año y tres meses amor</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5e6da; /* Color de fondo similar */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1 {
+            color: #ff6f61; /* Color del texto */
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        #photo-text {
+            font-family: Arial, sans-serif;
+            color: #ff6f61; /* Color del texto */
+            font-weight: bold; /* Texto en negrita */
+        }
+        #photos, #message {
+            display: none;
+        }
+        img {
+            width: 80%; /* Ajustar el tamaño de la imagen al 80% del ancho del contenedor */
+            max-width: 300px; /* Tamaño máximo de la imagen */
+            margin: 10px;
+            cursor: pointer;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            img {
+                width: 200px; /* Tamaño de la imagen para pantallas grandes */
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Feliz un año y tres meses, mi amor</h1>
+    <div id="photos">
+        <!-- Fotos -->
+        <img src="https://scontent.fgua6-1.fna.fbcdn.net/v/t39.30808-6/450259608_446411354829073_6415709884617503785_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=p4h9C_XntwEQ7kNvgEyhpFX&_nc_ht=scontent.fgua6-1.fna&cb_e2o_trans=q&oh=00_AYCC02F-gI3qZdV_9unRnRoWjrShDed2GMFyRfb4CNyBNQ&oe=66949593" alt="Foto 1" onclick="showText('Felicidades mi amor ya tenemos un año y tres meses, no sabes cuanto te amo mi amor ')">
+        <img src="https://scontent.fgua6-2.fna.fbcdn.net/v/t39.30808-6/449920467_446411378162404_8516210391361565084_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YzZFxu5uU_0Q7kNvgGjN1gr&_nc_ht=scontent.fgua6-2.fna&cb_e2o_trans=q&oh=00_AYBCL5taRA-GMI6KkipAgxBx0Wy-YXAY-TGu2N6_uBPLgw&oe=66948275" alt="Foto 2" onclick="showText('No sabes cuanto te agradezco por permitirme estar a tu lado, eres mi niña hermosa ')">
+        <img src="https://scontent.fgua6-2.fna.fbcdn.net/v/t39.30808-6/450556766_446412014829007_5784355475473642238_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rt_Z9ZT0HH4Q7kNvgGJgl0h&_nc_ht=scontent.fgua6-2.fna&cb_e2o_trans=q&oh=00_AYCaNvgsGH5qEq3LAjYEC5PRlQJ2cpkk_vE5V5u61V2i2Q&oe=669499AE" alt="Foto 3" onclick="showText('Amo estar a tu lado aun asi sea un rato adoro pasar tiempo contigo, eres perfecta tu no tienes defectos, para mis ojos tu eres hermosisima')">
+        <img src="https://scontent.fgua6-2.fna.fbcdn.net/v/t39.30808-6/450254767_446411388162403_1962198953875505066_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EzPGxMuC1qkQ7kNvgFZKxCu&_nc_ht=scontent.fgua6-2.fna&cb_e2o_trans=q&oh=00_AYAfIaS1Yz_nOZJqG0n9_JTSyJqSKc_MEEthWtEIroPN5g&oe=6694A0C4" alt="Foto 4" onclick="showText('Espero poder estar a tu lado siempre, te quiero apoyar en las buenas y en las malas, eres todo lo que quiero en esta vida, solo te pido estar contigo el resto de mi vida')">
+    </div>
+    <div id="message">
+        <p id="photo-text"></p>
+    </div>
+    <script>
+        document.getElementById('greeting').addEventListener('click', function() {
+            document.getElementById('photos').style.display = 'block';
+        });
+
+        function showText(text) {
+            document.getElementById('photo-text').textContent = text;
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
